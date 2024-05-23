@@ -31,6 +31,8 @@ body {
 main section{
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 100px;
     }
 
 
@@ -62,7 +64,7 @@ h4 {
     font-weight: 350;
     letter-spacing: -0.03rem;
     margin: 0;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 h5 {
@@ -117,8 +119,13 @@ button {
     color: var(--color-black);
     background: 0;
     border: #222 solid 1px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 0.5rem;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 header{
@@ -131,7 +138,7 @@ header{
 .headerflex{
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 header h1{
@@ -156,7 +163,6 @@ header h1{
 .introflex{
     background-color: var(--color-green);
     color: var(--color-green-lightest);
-    margin-bottom: 100px;
 }
 
 .introflex article{
@@ -167,69 +173,130 @@ header h1{
     padding-bottom: 50px;
 }
 
-.services{
-    margin-bottom: 100px;
+.services h2{
+    padding-top: 50px;
 }
 
 .kontakt-flex{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.kontakt-flex h3{
+    padding: 0;
+    padding-top: 30px;
+}
+
 
 .kunder{
-    padding-top: 50px;
     background: var(--color-grey-lightest);
 }
+
+.logoflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logoflex img{
+    max-width: 100%;
+    max-height: 70px;
+
+}
+.logo-container{
+    display: flex;
+    align-content: center;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
 
 .projekt-container{
     background-color: var(--color-green);
     height: 100px;
-    margin-bottom: 100px;
 }
 
-.arbejdsplads{
-    margin-bottom: 100px;
-}
 
 .medarbejdere{
-    padding-top: 50px;
     background-color: var(--color-red);
     color: var(--color-red-lightest);
-    padding-bottom: 100px;
 }
 
 .seflere-btn-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
 }
 
 .seflere-btn{
     color: var(--color-red-lightest);
     border-color: var(--color-red-lightest); 
 }
-.arrow-container {
-    display: flex;
-    align-items: center;
+
+.kontakt{
+    background-color: var(--color-violet);
+    color: var(--color-violet-lightest);
 }
 
-.arrow-tail {
-    width: 200px; /* Length of the arrow tail */
-    height: 10px; /* Thickness of the arrow tail */
-    background-color: #333; /* Color of the arrow tail */
+.viden{
+    background-color: var(--color-grey-lightest);
 }
 
-.arrow-head {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-bottom: 30px solid #333; /* Color of the arrow head */
+footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: var(--color-grey-lightest);
+    padding-top: 70px;
+    padding-bottom: 30px;
 }
+
+footer h3{
+    padding: 0;
+}
+
+footer b{
+    padding-bottom: 5px;
+}
+
+.footer-container{
+    display: grid;
+    padding-top: 30px;
+    grid-template-areas:
+    'i i'
+    'k o'
+    'm a'
+    ;
+}
+
+.footer-container div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+.kontakt-info{
+    grid-area: i;
+}
+
+.koebenhavn{
+    grid-area: k;
+}
+
+.odense{
+    grid-area: o;
+}
+
+.malmoe{
+    grid-area: m;
+}
+
+.andet-info{
+    grid-area: a;
+}
+
+
+
 
 
 
