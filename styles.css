@@ -1,0 +1,242 @@
+:root {
+    --color-black: #222;
+    --color-white: #fff;
+    --color-blue: #0020be;
+    --color-blue-light: #9cf;
+    --color-blue-lightest: #dcedf5;
+    --color-violet: #201b59;
+    --color-violet-light: #d0bbe6;
+    --color-violet-lightest: #ecebff;
+    --color-green: #04393b;
+    --color-green-light: #8ecfd2;
+    --color-green-lightest: #dcf0f0;
+    --color-grey: #3c464c;
+    --color-grey-light: #c8d0da;
+    --color-grey-lightest: #e9ecee;
+    --color-red: #593244;
+    --color-red-light: #e64652;
+    --color-red-lightest: #ffe6e6;
+    --color-error: #c80000;
+    --color-dark: #2c2c2c;
+}
+
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.4rem;
+    color: var(--color-black);
+    margin: 0;
+}
+
+main section{
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 350;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.phero{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.pxs {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+    margin: 0;
+}
+
+ul{
+    margin:0;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: -0.03rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 3px;
+}
+
+button {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    background: 0;
+    border: #222 solid 1px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+header{
+    background-color: var(--color-green);
+    color: var(--color-green-lightest);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.headerflex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+header h1{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.videocontainer{
+    background-color: var(--color-green);
+    color: var(--color-green-lightest);
+    padding-bottom: 50px;
+}
+
+.videobox{
+    background-color: #c8d0da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.introflex{
+    background-color: var(--color-green);
+    color: var(--color-green-lightest);
+    margin-bottom: 100px;
+}
+
+.introflex article{
+    padding-bottom: 50px;
+}
+
+.introflex ul{
+    padding-bottom: 50px;
+}
+
+.services{
+    margin-bottom: 100px;
+}
+
+.kontakt-flex{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.kunder{
+    padding-top: 50px;
+    background: var(--color-grey-lightest);
+}
+
+.projekt-container{
+    background-color: var(--color-green);
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.arbejdsplads{
+    margin-bottom: 100px;
+}
+
+.medarbejdere{
+    padding-top: 50px;
+    background-color: var(--color-red);
+    color: var(--color-red-lightest);
+    padding-bottom: 100px;
+}
+
+.seflere-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.seflere-btn{
+    color: var(--color-red-lightest);
+    border-color: var(--color-red-lightest); 
+}
+.arrow-container {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-tail {
+    width: 200px; /* Length of the arrow tail */
+    height: 10px; /* Thickness of the arrow tail */
+    background-color: #333; /* Color of the arrow tail */
+}
+
+.arrow-head {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #333; /* Color of the arrow head */
+}
+
+
+
+
+
+
+
+
+
+
