@@ -115,3 +115,48 @@
     --corner-circle: 50%;
 }
 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.arrow-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: solid black;
+    border-width: 3px 0 0 3px;
+    display: inline-block;
+    rotate: 315deg;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tail {
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s ease-in-out;
+
+}
+
+.arrow-container:hover .tail {
+    width: 115px; 
+    transform: translate(-15px);
+}
+
+.arrow-container:hover .arrow {
+    transform: translate(-10px, -10px);
+}
+
