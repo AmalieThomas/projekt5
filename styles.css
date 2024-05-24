@@ -249,6 +249,31 @@ header h1{
     color: var(--color-red-lightest);
 }
 
+.medarbejder-flex{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.medarbejder-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.medarbejder-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 390px;
+    max-height:440px;
+    overflow: hidden;
+}
+
+.medarbejder-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
 .seflere-btn-container{
     display: flex;
     align-items: center;
@@ -395,6 +420,12 @@ footer b{
 
     .teamwork-container{
         padding-left: 40px;
+    }
+
+    .medarbejder-flex{
+        flex-direction: row;
+        justify-content: space-around;
+
     }
 
 }
