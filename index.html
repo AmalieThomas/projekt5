@@ -52,8 +52,8 @@
             <section class="services">
                 <h2>Det kan vi hjælpe med</h2>
                 <div class="services-flex">
-                    <div class="services-img-container">
-                        <img src="billeder/appbruger.webp" alt="hænder der bruger en app">
+                    <div class="foto-container">
+                        <img src="billeder/appbruger.webp" alt="hænder der bruger en app" class="foto">
                     </div>  
                     <div class="services-text">
                         <h5>Strategisk rådgivning, UX og design af mobile løsninger</h5>
@@ -79,8 +79,8 @@
                 <h4>Vores Arbejdsplads</h4>
                 <h2>Vi skaber apps med teamwork og godt arbejdsmiljø</h2>
                 <div class="arbejdsplads-flex">
-                    <div class="teamwork-container">
-                        <img src="billeder/teamwork.jpg" alt="teammedlemmer giver hinanden high-fives" class="teamwork-foto">
+                    <div class="foto-container">
+                        <img src="billeder/teamwork.jpg" alt="teammedlemmer giver hinanden high-fives" class="foto">
                     </div>
                     <p>Vores afdeling i Odense er stolte af at levere apps, som opfylder dine specifikke behov.<br><br> 
                         Gennem tæt samarbejde og effektiv projektledelse opnår vi de bedste resultater.<br><br> 
@@ -178,12 +178,10 @@
                                 <label for="fname">Fornavn*</label><br>
                                 <input type="text" id="fname" name="fname">
                             </div>
-
                             <div class="inputfelter">
                                 <label for="lname">Efternavn*</label><br>
                                 <input type="text" id="lname" name="lname">
-                            </div>
-                            
+                            </div>                         
                             <div class="inputfelter">
                                 <label for="email">Email*</label><br>
                                 <input type="email" id="email" name="email">
@@ -194,7 +192,6 @@
                                 <label for="titel">Jobtitel*</label><br>
                                 <input type="text" id="titel" name="titel">
                             </div>
-
                             <div class="inputfelter">
                                 <label for="virksomhed">Virksomhed*</label><br>
                                 <input type="text" id="virksomhed" name="virksomhed">
@@ -206,7 +203,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="emne-input">
                         <label for="emne">Jeg vil gerne tale med jer om:</label><br>
                         <select id="emne" name="emne" size="4" multiple>
@@ -216,8 +212,7 @@
                             <option value="andet">andet</option>
                         </select><br>
                         <button>Vælg alle</button>
-                    </div>
-                   
+                    </div>     
                     <div class="vilkaar">
                         <div class="custom-checkbox">
                             <input type="checkbox" id="checkbox1">
@@ -232,32 +227,68 @@
             <section class="viden">
                 <h4>Viden</h4>
                 <h2>Sæt fart på dit app-projekt med React Native</h2>
-                <img src="billeder/reactnativeapp.webp" alt="medarbejder afprøver en react native app">
-                <h5>Er React Native en god mulighed for dig?</h5>
-                <p>Formentlig. For cross-platform-teknologien React Native har halet godt og grundigt ind på native på rigtig mange parametre. Og står du med et app-udviklingsprojekt, hvor en hurtig time-to-market er en vigtig prioritet, er det bestemt værd at kigge mod React Native. Særligt fordi du hverken skal give køb på funktionaliteter eller performance, men til gengæld ser ind i lavere omkostninger til app-udvikling, fordi du ikke skal udvikle din app til 2 forskellige platforme.</p>
-                <button>Læs mere</button>
+                <div class="viden-flex">
+                    <div class="foto-container">
+                        <img src="billeder/reactnativeapp.webp" alt="medarbejder afprøver en react native app" class="foto">
+                    </div>
+                    <div>
+                        <h5>Er React Native en god mulighed for dig?</h5>
+                        <p>Formentlig. For cross-platform-teknologien React Native har halet godt og grundigt ind på native på rigtig mange parametre. Og står du med et app-udviklingsprojekt, hvor en hurtig time-to-market er en vigtig prioritet, er det bestemt værd at kigge mod React Native. Særligt fordi du hverken skal give køb på funktionaliteter eller performance, men til gengæld ser ind i lavere omkostninger til app-udvikling, fordi du ikke skal udvikle din app til 2 forskellige platforme.</p>
+                        <button>Læs mere</button>
+                    </div>
+                </div>
+                
             </section>
             <section class="taleomdig">
                 <h2>Skal vi ikke tale om dig i stedet?</h2>
-                <div>
-                    <p><b>Navn</b></p>
-                    <p>Stilling</p>
-                    <p>Mail</p>
-                    <p>Telefon</p>
-                    <p>Linkedin</p>
+                <div class="taleomdig-flex">
+                    <div class="taleomdig-info">
+                        <div class="taleomdig-foto-container">
+                            <img src="billeder/jonathan.webp" alt="jonathan" class="taleomdig-foto">
+                        </div>           
+                        <div class="medarbejder-om">
+                            <p><b>Jonathan Bornemann</b></p>
+                            <p>Business Director & Partner, Mobile Experience</p>
+                            <div class="medarbejder-kontakt">
+                                <p>job@pentia.dk</p>
+                                <p>+45 2990 7799</p>
+                                <p>Linkedin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taleomdig-info">
+                        <div class="taleomdig-foto-container">
+                            <img src="billeder/andreas.webp" alt="jonathan" class="taleomdig-foto">
+                        </div>
+                        <div class="medarbejder-om">
+                            <p><b>Andreas Rask Lundsgaard</b></p>
+                            <p>Business Development Director & Partner</p>
+                            <div class="medarbejder-kontakt">
+                                <p>arl@pentia.dk</p>
+                                <p>+45 5360 0083</p>
+                                <p>Linkedin</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-            <h3>Lad os tales ved</h3>
-            <p>Kontakt os</p>
+            <h3>Lad os tales ved!</h3>
+            <div class="se-mere">
+                <p>Kontakt os</p>
+                <div class="small-arrow-container">
+                    <div class="small-tail"></div>
+                    <div class="small-arrow"></div>
+                </div>
+            </div>
             <div class="footer-container">
                 <div class="kontakt-info">
                     <p>Telefonnr. <b>+45 7023 3330</b></p>
                     <p>Mail. <b>info@pentia.dk</b></p>
                 </div>
                 <div class="koebenhavn">
-                    <p><b>Køvenhavn</b></p>
+                    <p><b>København</b></p>
                     <p>Islands Brygge 55</p>
                     <p>2300 København</p>
                 </div> 
@@ -276,8 +307,11 @@
                     <p>LinkedIn</p>
                     <p>Privatlivspolitik</p>
                 </div>
+                <div class="logo">
+                    <img src="billeder/pentialogo.png" alt="pentia logo">
+                </div> 
             </div>
-            <span>logo</span>
+              
         </footer>
      </body>
 </html>

@@ -142,8 +142,12 @@ header{
     padding-top: 20px;
 }
 
+.headerflex svg{
+    cursor: pointer;
+}
+
 header h1{
-    padding-top: 35px;
+    padding-top: 60px;
     padding-bottom: 35px;
     color: var(--color-green-lightest);
 }
@@ -229,7 +233,7 @@ header h1{
     height: 100px;
 }
 
-.teamwork-container{
+.foto-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,13 +241,12 @@ header h1{
     margin-bottom: 40px;
 }
 
-.teamwork-foto{
-    max-width: 100%;
+.foto{
     object-fit:cover;
     align-self: stretch;
-    
+    height: auto;
+    width: 100%;
 }
-
 
 .medarbejdere{
     background-color: var(--color-red);
@@ -283,10 +286,11 @@ header h1{
 
 .medarbejder-kontakt{
     padding-top: 20px;
+    cursor: pointer;
 }
 
-.medarbejder-kontakt :last-child:hover{
-    text-decoration: underline;
+.medarbejder-kontakt *:hover{
+    text-decoration: underline;  
 }
 
 .seflere-btn-container{
@@ -465,12 +469,34 @@ label{
     background-color: var(--color-grey-lightest);
 }
 
+
+
+.taleomdig-foto-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+}
+
+.taleomdig-foto{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.taleomdig-info:last-child{
+    margin-top: 50px;
+}
+
+
 footer{
     padding-left: 30px;
     padding-right: 30px;
     background-color: var(--color-grey-lightest);
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 footer h3{
@@ -489,6 +515,7 @@ footer b{
     'k o'
     'm a'
     ;
+    max-width: 500px;
 }
 
 .footer-container div{
@@ -497,8 +524,21 @@ footer b{
     padding-right: 10px;
 }
 
+footer .se-mere{
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
 .kontakt-info{
     grid-area: i;
+}
+
+.kontakt-info b{
+    cursor: pointer;
+}
+
+.kontakt-info b:hover{
+    text-decoration: underline;
 }
 
 .koebenhavn{
@@ -516,6 +556,38 @@ footer b{
 .andet-info{
     grid-area: a;
 }
+
+.andet-info :nth-last-child(2){
+    cursor: pointer;
+}
+
+.andet-info :last-child{
+    cursor: pointer;
+}
+
+.andet-info :nth-last-child(2):hover{
+    text-decoration: underline;
+}
+
+.andet-info :last-child:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
 
 @media only screen and (min-width: 800px) {
 
@@ -567,13 +639,13 @@ footer b{
         display: flex;
         flex-direction: row-reverse;
     }
-    .services-img-container{
+
+    .services-flex *{
         flex: 1;
-        padding-left: 50px;
     }
 
-    .services-text{
-        flex: 1;
+    .services-flex .foto-container{
+        padding-left: 20px;
     }
 
     .logo-stor{
@@ -588,8 +660,12 @@ footer b{
         flex-direction: row-reverse;
     }
 
-    .teamwork-container{
-        padding-left: 40px;
+    .arbejdsplads-flex *{
+        flex: 1;
+    }
+
+    .arbejdsplads .foto-container{
+        padding-left: 20px;
     }
 
     .medarbejder-flex{
@@ -630,7 +706,61 @@ footer b{
         max-width: 700px;
     }
 
+    .viden-flex{
+        display: flex;
+    }
+    .viden-flex *{
+        flex: 1;
+    }
+
+    .viden .foto-container{
+        padding-right: 20px;
+    }
+
+    .taleomdig-foto-container{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .taleomdig-foto{
+        object-fit:cover;
+        height: auto;
+        width: 100%;
+    }
+
+    .taleomdig-flex{
+        display: flex;
+        max-width: 600px;
+    }
+
+    .taleomdig-info{
+        flex: 1;
+    }
+
+    .taleomdig-info:last-child{
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
 }
+
+@media only screen and (min-width: 1300px) {
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 100%;
+    }
+
+    .logo{
+        order: -1;
+    }
+
+}
+
 
 
 
