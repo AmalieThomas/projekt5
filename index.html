@@ -172,33 +172,67 @@
                 <h4>Kontakt os</h4>
                 <h2>Vil du gerne høre mere?</h2>
                 <form action="">
-                    <label for="fname">Fornavn*</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Efternavn*</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="email">Email*</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="titel">Jobtitel*</label><br>
-                    <input type="text" id="titel" name="titel"><br>
-                    <label for="virksomhed">Virksomhed*</label><br>
-                    <input type="text" id="virksomhed" name="virksomhed"><br>
-                    <label for="telefonnummer">Telefonnummer</label><br>
-                    <input type="number" id="telefonnummer" name="telefonnummer"><br>
-                    <label for="emne">Jeg vil gerne tale med jer om:</label><br>
-                    <select id="emne" name="emne" size="4" multiple>
-                    <option value="pentia generelt">Pentia generelt</option>
-                    <option value="pentias app-kompetencer">Pentias app-kompetencer</option>
-                    <option value="et konkret projekt">Et konkret projekt</option>
-                    <option value="andet">andet</option>
-                    </select><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I have a bike</label><br>
-                    <input type="submit" value="Submit">
+                    <div class="input-flex"> 
+                        <div class="input-column">
+                            <div class="inputfelter">
+                                <label for="fname">Fornavn*</label><br>
+                                <input type="text" id="fname" name="fname">
+                            </div>
+
+                            <div class="inputfelter">
+                                <label for="lname">Efternavn*</label><br>
+                                <input type="text" id="lname" name="lname">
+                            </div>
+                            
+                            <div class="inputfelter">
+                                <label for="email">Email*</label><br>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+                        <div class="input-column">
+                            <div class="inputfelter">
+                                <label for="titel">Jobtitel*</label><br>
+                                <input type="text" id="titel" name="titel">
+                            </div>
+
+                            <div class="inputfelter">
+                                <label for="virksomhed">Virksomhed*</label><br>
+                                <input type="text" id="virksomhed" name="virksomhed">
+                            </div>
+
+                            <div class="inputfelter">
+                                <label for="telefonnummer">Telefonnummer</label><br>
+                                <input type="tel" id="telefonnummer" name="telefonnummer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emne-input">
+                        <label for="emne">Jeg vil gerne tale med jer om:</label><br>
+                        <select id="emne" name="emne" size="4" multiple>
+                            <option value="pentia generelt">Pentia generelt</option>
+                            <option value="pentias app-kompetencer">Pentias app-kompetencer</option>
+                            <option value="et konkret projekt">Et konkret projekt</option>
+                            <option value="andet">andet</option>
+                        </select><br>
+                        <button>Vælg alle</button>
+                    </div>
+                   
+                    <div class="vilkaar">
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1"></label>
+                            <p>Jeg accepterer vilkår og betingelser</p>
+                        </div>
+                        <p class="pxs">Ved registrering giver du samtykke til, at Pentia Group må kommunikere og markedsføre til dig i henhold til Pentias privatlivspolitik. Vi behandler dine oplysninger ansvarsfuldt og med respekt for dit privatliv, og du kan til enhver tid trække dit samtykke tilbage.</p>
+                    </div>
+                    <input type="submit" value="Ræk ud" class="submit">
                 </form>
             </section>
             <section class="viden">
                 <h4>Viden</h4>
                 <h2>Sæt fart på dit app-projekt med React Native</h2>
+                <img src="billeder/reactnativeapp.webp" alt="medarbejder afprøver en react native app">
                 <h5>Er React Native en god mulighed for dig?</h5>
                 <p>Formentlig. For cross-platform-teknologien React Native har halet godt og grundigt ind på native på rigtig mange parametre. Og står du med et app-udviklingsprojekt, hvor en hurtig time-to-market er en vigtig prioritet, er det bestemt værd at kigge mod React Native. Særligt fordi du hverken skal give køb på funktionaliteter eller performance, men til gengæld ser ind i lavere omkostninger til app-udvikling, fordi du ikke skal udvikle din app til 2 forskellige platforme.</p>
                 <button>Læs mere</button>

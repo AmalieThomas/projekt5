@@ -352,10 +352,114 @@ header h1{
 
 .kontakt{
     background-color: var(--color-violet);
-    color: var(--color-violet-lightest);
+    color: var(--color-violet-light);
 }
 
 
+.inputfelter input{
+    background: none;
+    border: none;
+    border-bottom: var(--color-violet-light) 1px solid;
+    color: var(--color-violet-light);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+
+label{
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: -0.03rem;
+}
+
+.input-flex{
+    padding-bottom: 20px;
+}
+
+.emne-input{
+    margin-bottom: 30px;
+}
+
+.emne-input *{
+    width: 100%;
+    max-width: 500px;
+}
+
+.emne-input button{
+    border: var(--color-violet-light) solid 1px;
+    color: var(--color-violet-light);
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.emne-input select{
+    background: none;
+    color: var(--color-violet-light);
+    border: var(--color-violet-light) solid 1px;
+}
+
+.vilkaar .pxs{
+    margin-left: 50px;
+}
+
+.custom-checkbox p{
+    margin-left: 30px;
+}
+
+.custom-checkbox{
+    display: flex;;
+}
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the label as a custom checkbox */
+.custom-checkbox label {
+    display: inline-block;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--color-violet-light);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* Create the checkmark/indicator (hidden by default) */
+.custom-checkbox label::after {
+    content: '';
+    display: none;
+    width: 6px;
+    height: 12px;
+    border: solid var(--color-violet-light);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    position: relative;
+    left: 6px;
+    top: 0.5px;
+}
+
+/* Show the checkmark/indicator when checked */
+.custom-checkbox input[type="checkbox"]:checked + label::after {
+    display: block;
+}
+
+.submit{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-violet-light);
+    background: 0;
+    border: var(--color-violet-light) solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0.5rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
 
 .viden{
     background-color: var(--color-grey-lightest);
@@ -503,6 +607,29 @@ footer b{
         margin-left: 150px;
         margin-right: 150px;
     }
+
+    .input-flex{
+        display: flex;
+        width: 70vw;
+        max-width: 1000px;
+    }
+
+    .inputfelter input{
+        min-width: 300px;
+    }
+
+    .input-column:last-child{
+        margin-left: 50px;
+    }
+
+    .input-column{
+        width: 100%;
+    }
+
+    .vilkaar .pxs{
+        max-width: 700px;
+    }
+
 }
 
 
