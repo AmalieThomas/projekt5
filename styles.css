@@ -307,14 +307,55 @@ header h1{
 .ledig-stilling hr{
     margin-top: 50px;
     border: 1px solid var(--color-black);
+    margin-bottom: 80px;
+}
+.ledig-stilling a p{
+    margin-top: 20px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
+.se-mere{
+    display: flex;
+    cursor: pointer;
+}
+
+.se-mere:hover{
+    text-decoration: underline;
+}
+
+.small-arrow-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.small-arrow {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: solid var(--color-black);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    rotate: 315deg;
+    margin-left: 11px;
+    border-radius: 0px 0px 2px 0px;
+}
+
+.small-tail {
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-black);
+}
 
 
 .kontakt{
     background-color: var(--color-violet);
     color: var(--color-violet-lightest);
 }
+
+
 
 .viden{
     background-color: var(--color-grey-lightest);
@@ -456,6 +497,11 @@ footer b{
 
     .ledig-stilling h2{
         font-size: 3rem;
+    }
+
+    .ledig-stilling{
+        margin-left: 150px;
+        margin-right: 150px;
     }
 }
 
