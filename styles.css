@@ -1,3 +1,6 @@
+
+/*Farver*/
+
 :root {
     --color-black: #222;
     --color-white: #fff;
@@ -20,6 +23,7 @@
     --color-dark: #2c2c2c;
 }
 
+/*Basics*/
 
 body {
     font-family: "Space Grotesk", sans-serif;
@@ -35,6 +39,7 @@ main section{
     padding-bottom: 100px;
 }
 
+/*Skrifttyper*/
 
 h1 {
     font-size: 2rem;
@@ -98,6 +103,8 @@ p {
     margin: 0;
 }
 
+/*Lister*/
+
 ul{
     margin: 0;
     padding: 0;
@@ -112,6 +119,8 @@ li {
     padding: 0;
     padding-top: 7px;
 }
+
+/*Knapper*/
 
 button {
     font-family: "Space Grotesk", sans-serif;
@@ -129,6 +138,35 @@ button {
     cursor: pointer;
 }
 
+/*lille pil*/
+
+.small-arrow-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.small-arrow {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: solid var(--color-black);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    transform: rotate(315deg);
+    margin-left: 11px;
+    border-radius: 0px 0px 2px 0px;
+}
+
+.small-tail {
+    width: 20px;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+/*Header*/
+
 header{
     background-color: var(--color-green);
     color: var(--color-white);
@@ -142,6 +180,10 @@ header{
     padding-top: 20px;
 }
 
+.headerflex img{
+    width: 70px;
+}
+
 .headerflex svg{
     cursor: pointer;
 }
@@ -151,6 +193,8 @@ header h1{
     padding-bottom: 35px;
     color: var(--color-green-lightest);
 }
+
+/*Video*/
 
 .videocontainer{
     background-color: var(--color-green);
@@ -166,18 +210,22 @@ header h1{
     height: 100px;
 }
 
+/*Introafsnit*/
+
 .introflex{
     background-color: var(--color-green);
     color: var(--color-green-lightest);
 }
 
-.introflex article{
+.introtekst{
     padding-bottom: 50px;
 }
 
 .introflex ul{
     padding-bottom: 50px;
 }
+
+/*"Hvad kan vi hjælpe med" -afsnit*/
 
 .services h2{
     padding-top: 50px;
@@ -209,6 +257,8 @@ header h1{
     padding-top: 40px;
 }
 
+/*Vores kunder -afsnit*/
+
 .kunder{
     background: var(--color-grey-lightest);
 }
@@ -228,10 +278,14 @@ header h1{
 
 }
 
+/*Projekter -afsnit*/
+
 .projekt-container{
     background-color: var(--color-green);
     height: 100px;
 }
+
+/*Vores arbejdsplads -afsnit*/
 
 .foto-container{
     display: flex;
@@ -247,6 +301,8 @@ header h1{
     height: auto;
     width: 100%;
 }
+
+/*Vores maedarbejdere -afsnit*/
 
 .medarbejdere{
     background-color: var(--color-red);
@@ -304,6 +360,8 @@ header h1{
     border-color: var(--color-red-lightest); 
 }
 
+/*Ledige-stillinger -afsnit*/
+
 .ledig-stilling h2{
     padding-bottom: 30px;
 }
@@ -328,37 +386,12 @@ header h1{
     text-decoration: underline;
 }
 
-.small-arrow-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.small-arrow {
-    position: absolute;
-    width: 7px;
-    height: 7px;
-    border: solid var(--color-black);
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    rotate: 315deg;
-    margin-left: 11px;
-    border-radius: 0px 0px 2px 0px;
-}
-
-.small-tail {
-    width: 20px;
-    height: 1px;
-    background-color: var(--color-black);
-}
-
+/*Kontaktformular*/
 
 .kontakt{
     background-color: var(--color-violet);
     color: var(--color-violet-light);
 }
-
 
 .inputfelter input{
     background: none;
@@ -369,7 +402,6 @@ header h1{
     max-width: 500px;
     margin-bottom: 20px;
 }
-
 
 label{
     font-size: 1.1rem;
@@ -404,49 +436,7 @@ label{
 }
 
 .vilkaar .pxs{
-    margin-left: 50px;
-}
-
-.custom-checkbox p{
     margin-left: 30px;
-}
-
-.custom-checkbox{
-    display: flex;;
-}
-/* Hide the default checkbox */
-.custom-checkbox input[type="checkbox"] {
-    display: none;
-}
-
-/* Style the label as a custom checkbox */
-.custom-checkbox label {
-    display: inline-block;
-    align-self: center;
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--color-violet-light);
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-/* Create the checkmark/indicator (hidden by default) */
-.custom-checkbox label::after {
-    content: '';
-    display: none;
-    width: 6px;
-    height: 12px;
-    border: solid var(--color-violet-light);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    position: relative;
-    left: 6px;
-    top: 0.5px;
-}
-
-/* Show the checkmark/indicator when checked */
-.custom-checkbox input[type="checkbox"]:checked + label::after {
-    display: block;
 }
 
 .submit{
@@ -465,11 +455,13 @@ label{
     cursor: pointer;
 }
 
+/*Viden-afsnit*/
+
 .viden{
     background-color: var(--color-grey-lightest);
 }
 
-
+/*Skal vi ikke tale om dig? - afsnit*/
 
 .taleomdig-foto-container{
     width: 200px;
@@ -490,6 +482,7 @@ label{
     margin-top: 50px;
 }
 
+/*Footer*/
 
 footer{
     padding-left: 30px;
@@ -587,9 +580,11 @@ footer .se-mere{
     object-fit: cover;
 }
 
-
+/*Media Queries*/
 
 @media only screen and (min-width: 800px) {
+
+    /*Basics*/
 
     header{
         padding-left: 50px;
@@ -606,6 +601,8 @@ footer .se-mere{
         padding-right: 50px;
     }
 
+     /*Skrifttyper*/
+
     h1{
         font-size: 4.8rem;
     }
@@ -614,12 +611,14 @@ footer .se-mere{
         font-size: 3.8rem;
     }
 
+    /*introafsnit*/
+
     .introflex{
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .introflex article{
+    .introtekst{
         display: flex;
         flex-direction: column;
         margin-left: 40px;
@@ -635,6 +634,8 @@ footer .se-mere{
         flex: 1;
     }
 
+    /*Hvad kan vi hjælpe dig med?*/
+
     .services-flex{
         display: flex;
         flex-direction: row-reverse;
@@ -648,12 +649,16 @@ footer .se-mere{
         padding-left: 20px;
     }
 
+    /*Vores Kunder*/
+
     .logo-stor{
         display: block;
     }
     .logo-lille{
         display: none;
     }
+
+    /*Vores Arbejdsplads*/
 
     .arbejdsplads-flex{
         display: flex;
@@ -668,12 +673,16 @@ footer .se-mere{
         padding-left: 20px;
     }
 
+    /*Medarbejdere*/
+
     .medarbejder-flex{
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-around;
         gap: 20px;
     }
+
+    /*Ledige-stillinger*/
 
     .ledig-stilling h2{
         font-size: 3rem;
@@ -683,6 +692,8 @@ footer .se-mere{
         margin-left: 150px;
         margin-right: 150px;
     }
+
+    /*Kontaktformular*/
 
     .input-flex{
         display: flex;
@@ -706,6 +717,8 @@ footer .se-mere{
         max-width: 700px;
     }
 
+    /*Viden*/
+
     .viden-flex{
         display: flex;
     }
@@ -716,6 +729,8 @@ footer .se-mere{
     .viden .foto-container{
         padding-right: 20px;
     }
+
+     /*Skal vi ikke tale om dig?*/
 
     .taleomdig-foto-container{
         justify-content: center;
@@ -733,7 +748,8 @@ footer .se-mere{
 
     .taleomdig-flex{
         display: flex;
-        max-width: 600px;
+        width: 60vw;
+        max-width: 700px;
     }
 
     .taleomdig-info{
@@ -748,6 +764,9 @@ footer .se-mere{
 }
 
 @media only screen and (min-width: 1300px) {
+
+    /*footer*/
+
     .footer-container{
         display: flex;
         justify-content: space-between;
