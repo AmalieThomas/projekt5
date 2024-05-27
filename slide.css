@@ -1,0 +1,140 @@
+/*SLIDESHOW*/
+.slide1 {
+    background-color: var(--color-green);
+}
+
+.slide2 {
+    background-color: #201b59;
+}
+
+.slidetext1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.slidetext1 h4 {
+    color: white;
+}
+
+.slidetext1 h5 {
+    color: white;
+}
+
+.slidetext1 p {
+    color: white;
+}
+
+.slidetext1 .small-arrow {
+    border-color: white;
+}
+
+.slidetext1 .small-tail {
+    background-color: white;
+}
+
+.slidetext1 .line3 {
+    color: white;
+}
+
+.line1 {
+    display: flex;
+}
+
+.line2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.customer {
+    display: flex;
+}
+
+.customer p {
+    display: flex;
+    margin-left: 7%;
+    margin-right: -12%;
+}
+
+.all-projects {
+    display: flex;
+    margin-left: 12%;
+}
+
+.line3 {
+    display: flex;
+    margin-top: 5%;
+}
+
+.nav-arrows {
+    color: white;
+    margin-left: 90%;
+    display: flex;
+    gap: 50%;
+    font-size: 30px;
+}
+
+.slide1 button {
+    background-color: #04393b;
+    color: white;
+    border-color: white;
+    display: flex;
+}
+
+.slide2 button {
+    background-color:#201b59;
+    color: white;
+    border-color: white;
+    display: flex;
+}
+
+.slidebutton {
+    margin-left: auto;
+}
+
+.energi-fyn img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.nav-arrows a {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .line3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slidebutton {
+        margin-right: 100%;
+        margin-top: -10%;
+        margin-bottom: 20%;;
+    }
+
+    .nav-arrows {
+        color: white;
+        margin-left: 50%;
+        margin-top: -2%;
+        display: flex;
+        gap: 50%;
+        font-size: 30px;
+    }
+
+    .line2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-projects {
+        margin-left: 0%;
+        margin-bottom: 10%;
+    }
+
+}
+
+
+
+
+
