@@ -8,15 +8,18 @@ for (let i = synligeBilleder; i < billeder.length; i++) {
         billeder[i].style.display = 'none';
     }
 
+
+//funktion som får billederne frem 
+
 function visBilleder() {
     let skjulteBilleder = document.querySelectorAll('.medarbejder-info[style*="display: none"]');
-    let rowsToShow = 3; // Number of billeder to show each time
+    let billederAtVise = 3;
     
-    for (let i = 0; i < rowsToShow && i < skjulteBilleder.length; i++) {
+    for (let i = 0; i < billederAtVise && i < skjulteBilleder.length; i++) {
         skjulteBilleder[i].style.display = 'flex';
         }
 
-    // Hide the button if no more billeder to show
+    // Skjul knappen når der ikke er flere billeder at vise
      if (document.querySelectorAll('.medarbejder-info[style*="display: none"]').length === 0) {
             seFlereKnap.style.display = 'none';
         }
