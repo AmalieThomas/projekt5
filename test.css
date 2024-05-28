@@ -1,5 +1,5 @@
 
-.body{
+/*.body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@
 
 .arrow-container-right:hover .arrow {
     transform: translate(-10px, -10px);
-}
+}*/
 
 
 
