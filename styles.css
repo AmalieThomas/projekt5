@@ -689,6 +689,10 @@ footer .se-mere{
         margin-right: 150px;
     }
 
+    .stillinger a p{
+        display: inline;
+    }
+
     /*Kontaktformular*/
 
     .input-flex{
