@@ -1,0 +1,23 @@
+
+.menu {background-color: var(--color-grey-lightest);}
+.menu-top {display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+} 
+
+.menu-top img {width: 70px;}
+
+.close-menu-btn {text-decoration: underline;}
+
+.menu-indhold {display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-punkter h2, h3 {padding:0px;
+}
+.menu-punkter h2:hover{text-decoration: underline;}
+.menu-punkter h3:hover{text-decoration: underline;}
