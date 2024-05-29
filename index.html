@@ -5,21 +5,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>App-udvikling med din forretning i fokus</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="menu.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
         <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
         <script src="script/medarbejder.js" defer></script>
+        <script src="menu.js" defer></script>
      </head>
      <body>
         <!--header-->
         <header>
             <div class="headerflex">
                 <img src="billeder/pentialogowhite.svg" alt="pentia logo hvid">
-                <span class="menu-btn">Menu</span>
+                <span id="menu-btn">Menu</span>
             </div>
             <h1> App-udvikling med din forretning i fokus</h1>
         </header>
+        <!--Menu-->
+        <nav id="menu">
+            <div class="menu-top">
+                <img src="billeder/pentialogo.png" alt="pentia logo sort">
+                <span id="close-menu-btn" >Luk Menu</span>
+            </div>
+
+            <div class="menu-indhold">
+               <div class="menu-punkter">
+                    <h2 onclick="dropdown()">  Ydelser </h2>
+                    <div id="ydelser" class="dropdowncontent">
+                    </div>
+                    <h2> Projekter </h2>
+                    <h2> Viden </h2>
+                    <h2> Om os </h2>
+                    <h3> Events </h3>
+                    <h3> Nyheder </h3>
+                    <h3> ESG </h3>
+                    <h3> Karriere </h3>
+                    <h3> Kontakt </h3>
+                </div>
+        
+            </div>
+        </nav>
         <!--video-->
         <main>
             <section class="videocontainer">
