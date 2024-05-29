@@ -21,9 +21,11 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+
 } 
 
-.menu-top img {width: 70px;}
+.menu-top img {width: 70px;
+cursor:pointer;}
 
 #close-menu-btn {text-decoration: underline;
                 cursor: pointer;}
@@ -31,6 +33,7 @@
 .menu-indhold {display: flex; 
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;;
 }
 
 .menu-punkter h2, h3 {padding:10px;
@@ -41,4 +44,8 @@
 
 .dropdowncontent {
     display: none;
+   }
+
+   @media only screen and (max-width: 800px) {
+    .menu-punkter h3 {font-size: 1.2rem;}
    }
