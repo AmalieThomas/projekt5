@@ -27,7 +27,7 @@ let valg =[
 let options = ""; 
 
 // for loop for at få alle kategorierne ud 
-for (var i=0; i < valg.length;++i) { 
+for (var i=0; i<valg.length;++i) { 
     options += '<h3>' + valg[i] + '<h3>'
 }
 //Væsentligt global, da den bruges i funktionen længere oppe
