@@ -1,4 +1,6 @@
 
+//Amalie Kragh Thomas
+
 let seFlereKnap = document.getElementById('seflere');
 let billeder = document.querySelectorAll('.medarbejder-info');
 let synligeBilleder = 3;
@@ -26,3 +28,9 @@ function visBilleder() {
 }
 
 seFlereKnap.addEventListener('click', visBilleder)
+
+
+//lavet med hjælp fra chatGPT med disse prompts 
+//"On my page i have a gallery of pictures in rows of 3. I want to make a "load more button" to show another row of pictures when i press it in html, css ans javascript"
+//" should be able to add 2 rows so a total of 3 rows will be shown on the page"
+//"will it be responsive on mobile?"
