@@ -6,11 +6,13 @@
         <title>App-udvikling med din forretning i fokus</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="accordion.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
         <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
         <script src="script/medarbejder.js" defer></script>
+        <script src="accordion.js" defer></script>
         <script src="menu.js" defer></script>
      </head>
      <body>
@@ -113,19 +115,97 @@
             </section>
             <section class="projekt-container">
             </section>
+
             <!--Vores Arbejdsplads-->
             <section class="arbejdsplads">
-                <h4>Vores Arbejdsplads</h4>
-                <h2>Vi skaber apps med teamwork og godt arbejdsmiljø</h2>
-                <div class="arbejdsplads-flex">
+                <div class="arbejdsplads-tekst">
+                    <h4>Vores Arbejdsplads</h4>
+                    <h2>Vi skaber apps med teamwork og godt arbejdsmiljø</h2>
+                </div>
+
+                <div class="full-accordion">
+
                     <div class="foto-container">
                         <img src="billeder/teamwork.jpg" alt="teammedlemmer giver hinanden high-fives" class="foto">
                     </div>
-                    <p>Vores afdeling i Odense er stolte af at levere apps, som opfylder dine specifikke behov.<br><br> 
-                        Gennem tæt samarbejde og effektiv projektledelse opnår vi de bedste resultater.<br><br> 
-                        Vores team er omtrent 20 medarbejdere og består blandt andet af designere, udviklere og projektledere - hver med deres unikke kompetencer, som vi alle gavner og lærer af.</p>
+
+                    <div class="content-accordion">
+                        <div class="content-container">
+                            <p>
+                                Vores afdeling i Odense er stolte af at levere apps, som opfylder dine specifikke behov.<br>
+                                Gennem tæt samarbejde og effektiv projektledelse opnår vi de bedste resultater.<br><br>
+
+                                Vores team er omtrent 20 medarbejdere og består blandt andet af designere, udviklere og projektledere.
+                                Hver med deres unikke kompetencer, som vi alle gavner og lærer af.
+                            </p>
+                        </div>
+
+                            <!--Accordions-->
+                        <div class="accordion-container">
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <h4>Vores arbejdsmiljø</h4>
+                                    <div class="medium-arrow-container">
+                                        <div class="medium-arrow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-content">
+                                    <p>
+                                        Arbejde fylder en stor del af ens liv, derfor er det så vigtigt at lave noget man brænder for og elsker.
+                                        Derfor prioriterer vi også en arbejdsplads, der giver lyst til at komme på arbejde. Vi går op i hinanden og laver gerne sjove 
+                                        aktiviteter i fællesskab. Vi stræber efter godt teamwork, fordi vi samen kan komme længere. 
+                            
+                                        Hos os er menneskerne vigtige end kompetencerne, for vi tror på at man altid kan lære noget nyt. 
+                                        Vi brænder for det vi laver og elsker at blive ved med at lære og udvikle os. Vi ser os selv i værdierne og implementerer dem i vores arbejde.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <h4>Vores kerneværdier</h4>
+                                    <div class="medium-arrow-container">
+                                        <div class="medium-arrow"></div>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <p>
+                                        I Pentia har vi 3 værdier - respekt, ansvar og sjov.
+                                        <br>
+                                        <br>
+                                        <b>Respekt</b> - Vi har et ansvar for at levere et funktionelt og opfyldende produkt til vores kunder, samt ansvar for egen læring.  
+                                        <br>
+                                        <br>
+                                        <b>Ansvar</b> - Vi har respekt for hinanden og hver vores faglighed på arbejdspladsen og respekt for vores kunder og deres ønsker.  
+                                        <br>
+                                        <br>
+                                        <b>Sjov</b> - Sjov for os er at arbejde sammen med gode mennesker om ting, der flytter vores kunders forretning
+                                    </p>
+                                </div>
+                            </div>
+
+                                <div class="accordion">
+                                    <div class="accordion-header">
+                                        <h4>Sunde tiltag</h4>
+                                        <div class="medium-arrow-container">
+                                            <div class="medium-arrow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>
+                                            Vi ved at det kan være en udfordring at arbejdet indebærer meget skærmtid.  
+                                            Vi har derfor valgt at tilbyde en sund og lækker frokost ordning, når man er på kontoret. 
+                                            Derudover har vi aktivt taget et valg om at tilbyde vores medarbejdere 2 timers betalt motion om ugen.  
+                                            Som noget ekstra tager vi hver måned en 20 min gåtur med nærmeste leder - fordi vi værdsætter vores medarbejdere og deres velvære.
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </section>
+
             <!--Vores Medarbejdere-->
             <section class="medarbejdere">
                 <h4>Vores medarbejdere</h4>

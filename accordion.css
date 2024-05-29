@@ -1,72 +1,95 @@
 * {box-sizing: border-box;}
 
-.container {
-  height: 20vh;
-  display: flex;
-  align-items: center;
+.arbejdsplads {
+    display: flex;
+    flex-direction: column;
+    margin-top: -12%;
 }
 
-header img {
-  max-width: 200px;
-  height: auto;
-  margin: auto;
+.full-accordion {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.accordion {
-    margin: 0 36px 15px;
-  }
+.content-container {
+    display: flex;
+}
+
+.content-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-container {
+    margin-top: 10%;
+    width: 650px;
+}
+
+.medium-arrow-container {
+    margin-right: 10px;
+}
   
-  .accordion-header {
+.accordion {
+    margin-top: 15px;
+}
+  
+.accordion-header {
     background-color: #ffffff;
-    padding: 5px 10px;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #000;
-  }
+    width: 100%;
+}
 
-  .medium-arrow {
-    position: absolute;
+.accordion-header h4 {
+    margin-left: 10px;
+    margin-bottom: -30px;
+}
+
+.medium-arrow {
+    cursor: pointer;
     width: 15px;
     height: 15px;
     border: solid var(--color-black);
     border-width: 0 3px 3px 0;
-    display: inline-block;
     transform: rotate(405deg);
     margin-left: -20px;
-    margin-top: 8px;
-    border-radius: 0px 0px 2px 0px;
 }
 
-  .accordion-header h2 {
-    margin: 0; /* Fjern standard margin fra h2 */
-    padding: 0; /* Fjern padding fra h2 */
-  }
+.foto-container {
+    width: 1350px;
+    height: 790px;
+}
 
-  .accordion:first-of-type .accordion-header {
+.foto-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.accordion-content p {
+    margin-bottom: 30px;
+}
+
+.accordion:first-of-type .accordion-header {
     border-top: 2px solid #000;
     padding-top: 15px;
-  }
+}
 
-  .accordion-content{
+.accordion-content{
     display: none;
     padding: 10px;
-  }
+}
 
-  .accordion.active .accordion-content{ 
-    display:block;
+.accordion.active .accordion-content{ 
+    display: flex;
     border-bottom: 2px solid #000;
 }
 
-  .accordion.active .accordion-header{
+.accordion.active .accordion-header{
     border-bottom: 0px;
 }
 
-  .accordion.active .medium-arrow{
+.accordion.active .medium-arrow{
     transform: rotate(225deg);
 }
-  i {
-    align-self: center;
-    margin-right: 30px;
-    margin-left: 30px;
-  }
+
