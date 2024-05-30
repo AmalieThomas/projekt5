@@ -2,11 +2,7 @@
 let menu = document.getElementById('menu')
 // åben menuen
 document.getElementById('menu-btn').onclick = function() {
-    if (menu.classList.contains('visible')) {
-        menu.classList.remove('visible');
-    } else {
         menu.classList.add('visible');
-    }
 };
 //luk menuen
 document.getElementById('close-menu-btn').onclick = function() {
