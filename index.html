@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="accordion.css">
+        <link rel="stylesheet" href="slide.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    
@@ -14,6 +15,8 @@
         <script src="script/medarbejder.js" defer></script>
         <script src="accordion.js" defer></script>
         <script src="menu.js" defer></script>
+        <script src="slide.js"></script>
+        <script src="genvej.js"></script>
      </head>
      <body>
         <!--header-->
@@ -75,20 +78,20 @@
                 <!--Genveje-->
                 <nav>
                     <h5>Genveje</h5>
-                    <ul>
-                        <li>Det kan vi hjælpe med</li>
-                        <li>Vores kunder</li>
-                        <li>Projekter</li>
-                        <li>Vores Arbejdsplads</li>
-                        <li>Medarbejdere</li>
-                        <li>Ledige stillinger</li>
-                        <li>Kontakt</li>
-                        <li>Viden</li>
+                    <ul class="nav-list">
+                        <li data-target="services">Det kan vi hjælpe med</li>
+                        <li data-target="kunder">Vores kunder</li>
+                        <li data-target="slider">Projekter</li>
+                        <li data-target="arbejdsplads">Vores Arbejdsplads</li>
+                        <li data-target="medarbejdere">Medarbejdere</li>
+                        <li data-target="stillinger">Ledige stillinger</li>
+                        <li data-target="kontakt">Kontakt</li>
+                        <li data-target="viden">Viden</li>
                     </ul>
                 </nav>
             </section>
              <!--Hvad kan vi hjælpe med-->
-            <section class="services">
+            <section id="services" class="services">
                 <h2>Det kan vi hjælpe med</h2>
                 <div class="services-flex">
                     <div class="foto-container">
@@ -105,7 +108,7 @@
                 </div>
             </section>
             <!--Udsnit af kunder-->
-            <section class="kunder">
+            <section id="kunder" class="kunder">
                 <h4>Vores Kunder</h4>
                 <h2>Et udsnit af vores kunder</h2>
                 <div class="logo-container">
@@ -113,11 +116,82 @@
                     <img src="billeder/logolille.png" alt="logoer" class="logo-lille">
                 </div>
             </section>
-            <section class="projekt-container">
-            </section>
+
+                    <!--Slideshow-->
+                    <div id="slider" class="slider">
+                        <section class="slide1">
+                            <div class="slidetext1">
+                                <div class="line1">
+                                    <h4>Projekter</h4>
+                                    <div class="nav-arrows">
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                                </div>
+                                <div class="line2">
+                                    <div class="customer">
+                                        <h5>Kunde:</h5>
+                                        <p>Energi Fyn</p>
+                                    </div>
+                                    <div class="all-projects">
+                                        <p>Se alle projekter</p>
+                                        <div class="small-arrow-container">
+                                            <div class="small-tail"></div>
+                                            <div class="small-arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line3">
+                                    <h2>Energi Fyn opruster i kampen om<br>kunderne med ny app</h2>
+                                    <div class="slidebutton">
+                                        <button>Udforsk projektet</button>
+                                    </div>
+                                </div>
+                                <div class="energi-fyn">
+                                    <img src="billeder/energi-fyn.png" alt="Energi Fyn">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="slider">
+                        <section class="slide2">
+                            <div class="slidetext1">
+                                <div class="line1">
+                                    <h4>Projekter</h4>
+                                    <div class="nav-arrows">
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    </div>
+                                </div>
+                                <div class="line2">
+                                    <div class="customer">
+                                        <h5>Kunde:</h5>
+                                        <p>Tandlægeforeningen</p>
+                                    </div>
+                                    <div class="all-projects">
+                                        <p>Se alle projekter</p>
+                                        <div class="small-arrow-container">
+                                            <div class="small-tail"></div>
+                                            <div class="small-arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line3">
+                                    <h2>Ny brugerorienteret app bringer<br>Tandlægeforeningen tættere på<br>deres medlemmer</h2>
+                                    <div class="slidebutton">
+                                        <button>Udforsk projektet</button>
+                                    </div>
+                                </div>
+                                <div class="energi-fyn">
+                                    <img src="billeder/tandlaeger2.png" alt="Energi Fyn">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
 
             <!--Vores Arbejdsplads-->
-            <section class="arbejdsplads">
+            <section id="arbejdsplads" class="arbejdsplads">
                 <div class="arbejdsplads-tekst">
                     <h4>Vores Arbejdsplads</h4>
                     <h2>Vi skaber apps med teamwork og godt arbejdsmiljø</h2>
@@ -207,7 +281,7 @@
             </section>
 
             <!--Vores Medarbejdere-->
-            <section class="medarbejdere">
+            <section id="medarbejdere" class="medarbejdere">
                 <h4>Vores medarbejdere</h4>
                 <h2>Mød vores team</h2>
                 <div class="medarbejder-flex">
@@ -347,7 +421,7 @@
                 </div>
             </section>
             <!--Ledigestillinger-->
-            <section class="stillinger">
+            <section id="stillinger" class="stillinger">
                 <h4>Ledige stillinger</h4>
                 <div class="ledig-stilling">
                     <h5>Odense</h5>
@@ -378,7 +452,7 @@
                 </div>
             </section>
             <!--Kontaktformular-->
-            <section class="kontakt">
+            <section id="kontakt" class="kontakt">
                 <h4>Kontakt os</h4>
                 <h2>Vil du gerne høre mere?</h2>
                 <form>
@@ -432,7 +506,7 @@
                 </form>
             </section>
             <!--Viden-->
-            <section class="viden">
+            <section id="viden" class="viden">
                 <h4>Viden</h4>
                 <h2>Sæt fart på dit app-projekt med React Native</h2>
                 <div class="viden-flex">
@@ -447,7 +521,7 @@
                 </div>
             </section>
             <!--Skal vi ikke tale om dig?-->
-            <section class="taleomdig">
+            <section id="taleomdig" class="taleomdig">
                 <h2>Skal vi ikke tale om dig i stedet?</h2>
                 <div class="taleomdig-flex">
                     <div class="taleomdig-info">
