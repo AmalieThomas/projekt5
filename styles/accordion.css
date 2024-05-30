@@ -5,13 +5,25 @@
     flex-direction: column;
 }
 
-#appbruger {
-    width: 100%;
-    max-height: 440px;
+#appbruger-container {
+    width: 675px;
+    height: 395px;
 }
 
-#teamwork {width: 100%;
-    max-height: 440px;}
+#appbruger {
+    width: 100%;
+    height: 100%;
+}
+
+#teamwork-container {
+    width: 675px;
+    height: 395px;
+}
+
+#teamwork {
+    width: 100%;
+    height: 100%;
+}
 
 .full-accordion {
     display: flex;
@@ -96,16 +108,24 @@
 
 @media only screen and (min-width: 1100px) {
 .accordion-container {
-    margin-top: 10%;
-    width: 650px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.content-accordion {
+    width: 50%;
+}
+
+.accordion-content {
+    width: 100%;
 }
 .full-accordion {
     flex-wrap: nowrap;
 }
 
 #teamwork-container {
-    width: 1350px;
-    height: 790px;
+    width: 50%;
+    height: 696px;
 }
 
 #teamwork {
@@ -113,12 +133,13 @@
     height: 100%;
 }
 #appbruger-container {
-    width: 1350px;
-    height: 790px;
+    width: 50%;
+    height: 617px;
 }
 #appbruger {
     width: 100%;
     height: 100%;
-    margin-left: 25px;
 }
+
+
 }
