@@ -205,7 +205,10 @@ header h1{
 .videocontainer{
     background-color: var(--color-green);
     color: var(--color-green-lightest);
-    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 100px;
 }
 
 .videobox{
@@ -621,6 +624,11 @@ footer .se-mere{
 
     .introflex nav{
         flex: 1;
+    }
+
+    .videocontainer{
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     /*Hvad kan vi hjælpe dig med? se accordion.css */
