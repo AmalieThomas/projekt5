@@ -1,3 +1,5 @@
+//Nadialiva C. Bosse Nørgård (ekstra javascript)
+
 document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.querySelectorAll('.nav-list li');
 

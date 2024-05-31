@@ -182,11 +182,17 @@ header{
 
 .headerflex img{
     width: 70px;
-}
-
-.headerflex svg{
     cursor: pointer;
 }
+
+.headerflex span{
+    cursor: pointer;
+}
+
+.headerflex span:hover{
+    text-decoration: underline;
+}
+
 
 header h1{
     padding-top: 60px;

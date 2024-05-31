@@ -1,3 +1,4 @@
+//Cecilie Kruse Fyhn Knudsen
 
 let menu = document.getElementById('menu')
 // åben menuen
