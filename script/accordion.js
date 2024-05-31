@@ -1,3 +1,5 @@
+//Naya Catling
+
 let acc = document.querySelectorAll('.accordion');
 
 for (let i = 0; i < acc.length; i++) {

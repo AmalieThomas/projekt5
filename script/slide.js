@@ -1,3 +1,4 @@
+//Nadialiva C. Bosse Nørgård (primære javascript)
 /*SLIDER JS*/
 
 window.onload = function() {

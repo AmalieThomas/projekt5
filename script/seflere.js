@@ -1,4 +1,3 @@
-
 //Amalie Kragh Thomas
 
 let seFlereKnap = document.getElementById('seflere');
